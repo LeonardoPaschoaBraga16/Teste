@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="description" content="HTML">
+
+        <meta name="keywords" content="script, css, html, javascript">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="Script/validação.js">
+
+        </script>
+        <title>PROG2-contatos.HTML</title>
+    </head>
+
+    <body>
+         <center>
+            <form name="formlog" method="post" action="">
+                <table border="0" class="table1">
+                    <tr>
+                        <td colspan="2" align="center">PW-III B</td>
+                    </tr>
+                    
+                    <tr class="dados">
+                        <td>Nome: <input type="text" id="nome" placeholder="digite seu Nome aqui" size="30" maxlength="25"/></td>
+
+                        <td>Email: <input type="text" id="email" placeholder="jonas@gmail.com" size="30" maxlength="25"></td>
+
+                        <td>Telefone: <input type="number" id="telefone" placeholder="912345678" size="30" maxlength="25"></td>
+                    </tr>
+
+                    <tr class="sex">
+                        <td>Sexo: <input type="text" id="sex" placeholder="M/F" size="1"></td>
+                        
+                        <td>Nasc: <input type="date" id="birth"></td>
+                    </tr>
+
+                    <tr>
+                        <td>FeedBack</td>
+                                <tr class="feedback">
+                                    <td><input type="radio" name="opcao" id="rec">Reclamações</td>
+                                    <td><input type="radio" name="opcao" id="elo">Elogios</td>
+                                    <td><input type="radio" name="opcao" id="info">Informações</td>
+                                    <td><input type="radio" name="opcao" id="sug">Sugestão</td>
+                                </tr>
+                    </tr>
+
+                    <tr class="localizacao">
+                        <td>Localização</td>
+                                <tr class="loc">
+                                    <td>Cep: <input type="number" id="cep" size="7" placeholder="1234567891"></td>
+                                    <td>Estado: <input type="text" id="estado" size="5" placeholder="SP/RJ/BH"></td>
+                                    <td>Endereço: <input type="text" id="endereco" size="20" placeholder="R. Bernardinho Rodrigo"></td>
+                                    <td>Cidade: <input type="text" id="city" size="20" placeholder="Carapicuiba"></td>
+                                </tr>
+        
+
+                    <tr class="sugestao">
+                        <td  colspan="2">
+                            <textarea id="sug" cols="40" rows="5" placeholder="Insira sua Sugestão"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td colspan="2" align="center">
+                                <input type="button" value="Enviar" onclick="validar()">
+                                <input type="reset" name="btn_reset" value="Cancelar">
+                            </td>	
+                    </tr>
+                </table>
+            </form>
+        </center>
+
+     
+
+    </body>
+</html>
+
